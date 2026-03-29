@@ -8,145 +8,93 @@ export function Projects() {
   const { t } = useTranslation();
 
   return (
-    <section id="projects" className="py-24 bg-secondary/20">
+    <section id="projects" className="py-24 bg-white/50">
       <div className="container px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-16 text-center"
+          className="mb-20 text-center"
         >
-          <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground">
-            Meus <span className="text-primary">Projetos</span>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground">
+            Projetos <span className="text-primary">Selecionados</span>
           </h2>
-          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Uma seleção de trabalhos onde o design e a tecnologia se encontram.
-          </p>
+          <div className="w-20 h-1.5 bg-primary mx-auto mt-6 rounded-full" />
         </motion.div>
 
-        <div className="space-y-20">
-          {/* IAgroMoz Feature Project */}
+        <div className="grid gap-16">
+          {/* Project 1 */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="relative group rounded-[2.5rem] overflow-hidden border border-border bg-white hover:shadow-3xl transition-all duration-500"
+            className="group grid md:grid-cols-2 gap-12 items-center"
           >
-            <div className="grid md:grid-cols-2 gap-0">
-              <div className="bg-secondary/50 p-12 flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-50" />
-                <img 
-                  src={iagroLogo} 
-                  alt="IAgroMoz" 
-                  className="relative z-10 w-64 h-64 object-contain drop-shadow-2xl transform group-hover:scale-105 transition-transform duration-700"
-                />
+            <div className="relative aspect-video rounded-[2rem] overflow-hidden shadow-2xl border border-border bg-secondary/30">
+              <img 
+                src={iagroLogo} 
+                alt="IAgroMoz" 
+                className="w-full h-full object-contain p-12 transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+            
+            <div className="space-y-6">
+              <div className="space-y-2">
+                <h3 className="text-3xl font-bold text-foreground">{t('projects.iagromoz.title')}</h3>
+                <p className="text-primary font-bold uppercase tracking-wider text-sm">{t('projects.iagromoz.subtitle')}</p>
               </div>
-
-              <div className="p-10 md:p-16 flex flex-col justify-center space-y-8">
-                <div>
-                  <h3 className="text-3xl font-bold text-foreground mb-3">
-                    {t('projects.iagromoz.title')}
-                  </h3>
-                  <p className="text-primary font-semibold text-lg mb-6">{t('projects.iagromoz.subtitle')}</p>
-                  <p className="text-muted-foreground leading-relaxed text-lg">
-                    {t('projects.iagromoz.description')}
-                  </p>
-                </div>
-
-                <div className="grid grid-cols-2 gap-6 py-2">
-                  <div className="flex items-center gap-3 text-sm font-medium text-foreground/70">
-                    <div className="p-2 bg-primary/5 rounded-lg"><CloudSun className="h-5 w-5 text-primary" /></div>
-                    {t('projects.iagromoz.features.weather')}
-                  </div>
-                  <div className="flex items-center gap-3 text-sm font-medium text-foreground/70">
-                    <div className="p-2 bg-primary/5 rounded-lg"><Info className="h-5 w-5 text-primary" /></div>
-                    {t('projects.iagromoz.features.assistance')}
-                  </div>
-                  <div className="flex items-center gap-3 text-sm font-medium text-foreground/70">
-                    <div className="p-2 bg-primary/5 rounded-lg"><Users className="h-5 w-5 text-primary" /></div>
-                    {t('projects.iagromoz.features.community')}
-                  </div>
-                  <div className="flex items-center gap-3 text-sm font-medium text-foreground/70">
-                    <div className="p-2 bg-primary/5 rounded-lg"><ShoppingCart className="h-5 w-5 text-primary" /></div>
-                    {t('projects.iagromoz.features.marketplace')}
-                  </div>
-                </div>
-
-                <div className="flex flex-wrap gap-3">
-                  {['Django', 'Python', 'UI/UX Design', 'User Research'].map((tech) => (
-                    <span key={tech} className="px-4 py-1.5 text-xs font-bold bg-secondary text-muted-foreground rounded-full border border-border">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="pt-4">
-                  <button className="bg-foreground hover:bg-foreground/90 text-white px-8 py-3 rounded-2xl flex items-center gap-3 transition-all font-bold shadow-lg">
-                     Ver Detalhes <ExternalLink className="h-4 w-4" />
-                  </button>
-                </div>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                {t('projects.iagromoz.description')}
+              </p>
+              <div className="flex flex-wrap gap-3">
+                {['Django', 'Python', 'UI/UX Design'].map(tech => (
+                  <span key={tech} className="px-4 py-1.5 bg-white border border-border rounded-xl text-sm font-semibold text-muted-foreground">
+                    {tech}
+                  </span>
+                ))}
               </div>
+              <button className="flex items-center gap-2 font-bold text-primary hover:gap-4 transition-all">
+                Ver Detalhes <ExternalLink className="h-5 w-5" />
+              </button>
             </div>
           </motion.div>
 
-          {/* Social Media UI Project */}
+          {/* Project 2 */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative group rounded-[2.5rem] overflow-hidden border border-border bg-white hover:shadow-3xl transition-all duration-500"
+            className="group grid md:grid-cols-2 gap-12 items-center"
           >
-            <div className="grid md:grid-cols-2 gap-0">
-              <div className="p-10 md:p-16 flex flex-col justify-center space-y-8 order-2 md:order-1">
-                <div>
-                  <h3 className="text-3xl font-bold text-foreground mb-3">
-                    {t('projects.social_ui.title')}
-                  </h3>
-                  <p className="text-primary font-semibold text-lg mb-6">{t('projects.social_ui.subtitle')}</p>
-                  <p className="text-muted-foreground leading-relaxed text-lg">
-                    {t('projects.social_ui.description')}
-                  </p>
-                </div>
-
-                <div className="grid grid-cols-2 gap-6 py-2">
-                  <div className="flex items-center gap-3 text-sm font-medium text-foreground/70">
-                    <div className="p-2 bg-primary/5 rounded-lg"><Type className="h-5 w-5 text-primary" /></div>
-                    {t('projects.social_ui.features.editor')}
-                  </div>
-                  <div className="flex items-center gap-3 text-sm font-medium text-foreground/70">
-                    <div className="p-2 bg-primary/5 rounded-lg"><ImageIcon className="h-5 w-5 text-primary" /></div>
-                    {t('projects.social_ui.features.upload')}
-                  </div>
-                  <div className="flex items-center gap-3 text-sm font-medium text-foreground/70">
-                    <div className="p-2 bg-primary/5 rounded-lg"><Eye className="h-5 w-5 text-primary" /></div>
-                    {t('projects.social_ui.features.preview')}
-                  </div>
-                  <div className="flex items-center gap-3 text-sm font-medium text-foreground/70">
-                    <div className="p-2 bg-primary/5 rounded-lg"><Layout className="h-5 w-5 text-primary" /></div>
-                    {t('projects.social_ui.features.ux')}
-                  </div>
-                </div>
-
-                <div className="flex flex-wrap gap-3">
-                  {['React', 'Tailwind CSS', 'Framer Motion', 'UI/UX Design'].map((tech) => (
-                    <span key={tech} className="px-4 py-1.5 text-xs font-bold bg-secondary text-muted-foreground rounded-full border border-border">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+            <div className="space-y-6 order-2 md:order-1">
+              <div className="space-y-2">
+                <h3 className="text-3xl font-bold text-foreground">{t('projects.social_ui.title')}</h3>
+                <p className="text-primary font-bold uppercase tracking-wider text-sm">{t('projects.social_ui.subtitle')}</p>
               </div>
-
-              <div className="bg-secondary/50 p-10 flex items-center justify-center relative overflow-hidden order-1 md:order-2">
-                <div className="absolute inset-0 bg-gradient-to-bl from-primary/5 to-transparent opacity-50" />
-                <img 
-                  src={socialUiImg} 
-                  alt="Social Media UI" 
-                  className="relative z-10 w-full h-auto max-h-96 object-cover rounded-3xl shadow-2xl transform group-hover:scale-105 transition-transform duration-700"
-                />
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                {t('projects.social_ui.description')}
+              </p>
+              <div className="flex flex-wrap gap-3">
+                {['React', 'Tailwind CSS', 'Framer Motion'].map(tech => (
+                  <span key={tech} className="px-4 py-1.5 bg-white border border-border rounded-xl text-sm font-semibold text-muted-foreground">
+                    {tech}
+                  </span>
+                ))}
               </div>
+              <button className="flex items-center gap-2 font-bold text-primary hover:gap-4 transition-all">
+                Ver Detalhes <ExternalLink className="h-5 w-5" />
+              </button>
+            </div>
+
+            <div className="relative aspect-video rounded-[2rem] overflow-hidden shadow-2xl border border-border bg-secondary/30 order-1 md:order-2">
+              <img 
+                src={socialUiImg} 
+                alt="Social UI" 
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
           </motion.div>
         </div>

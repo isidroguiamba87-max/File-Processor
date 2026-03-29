@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 100%;
+  --background: 210 40% 98%;
   --foreground: 222 47% 11%;
   --card: 0 0% 100%;
   --card-foreground: 222 47% 11%;
@@ -13,7 +13,7 @@
   --primary-foreground: 210 40% 98%;
   --secondary: 210 40% 96.1%;
   --secondary-foreground: 222.2 47.4% 11.2%;
-  --muted: 210 40% 96.1%;
+  --muted: 214 32% 91%;
   --muted-foreground: 215.4 16.3% 46.9%;
   --accent: 221 83% 53%;
   --accent-foreground: 210 40% 98%;
@@ -22,7 +22,7 @@
   --border: 214.3 31.8% 91.4%;
   --input: 214.3 31.8% 91.4%;
   --ring: 221.2 83.2% 53.3%;
-  --radius: 1rem;
+  --radius: 1.25rem;
 }
 
 @layer base {
@@ -33,11 +33,19 @@
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', sans-serif;
     background-image: 
-      radial-gradient(at 0% 0%, hsla(221, 83%, 53%, 0.03) 0, transparent 50%),
-      radial-gradient(at 100% 100%, hsla(221, 83%, 53%, 0.03) 0, transparent 50%);
+      radial-gradient(at 0% 0%, hsla(221, 83%, 53%, 0.05) 0, transparent 50%),
+      radial-gradient(at 100% 100%, hsla(221, 83%, 53%, 0.05) 0, transparent 50%);
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold tracking-tight;
     font-family: 'Space Grotesk', sans-serif;
   }
+}
+
+.glass-card {
+  @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400;
 }
