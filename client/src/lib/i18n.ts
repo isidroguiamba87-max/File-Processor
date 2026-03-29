@@ -19,7 +19,7 @@ const resources = {
       },
       about: {
         title: "About",
-        description: "In Computer Engineering training at UMUM and member of Ku_kulaDevs. I specialize in merging design and technology to create intuitive and functional interfaces.",
+        description: "In Computer Engineering and Technology training at UMUM and member of Ku_kulaDevs. I specialize in merging design and 'AI' technology to create intuitive and functional interfaces.",
         goal: "An AI enthusiast dedicated to building the future of digital interaction."
       },
       projects: {
@@ -82,7 +82,7 @@ const resources = {
       },
       about: {
         title: "Sobre",
-        description: "Em Formação em Engenharia Informática na UMUM e membro da Ku_kulaDevs. Especializo-me em unir design e tecnologia para criar interfaces intuitivas e funcionais.",
+        description: "Em Formação Engenharia Informática e Tecnologia na UMUM e membro da Ku_kulaDevs. Especializo-me em unir design e tecnologia 'IA' para criar interfaces intuitivas e funcionais.",
         goal: "Um entusiasta em IA dedicado a construir o futuro da interação digital."
       },
       projects: {
@@ -145,7 +145,7 @@ const resources = {
       },
       about: {
         title: "Sobre",
-        description: "En formación de Ingeniería Informática en UMUM y miembro de Ku_kulaDevs. Me especializo en unir diseño y tecnología para crear interfaces intuitivas y funcionales.",
+        description: "En formación de Ingeniería Informática y Tecnología en UMUM y miembro de Ku_kulaDevs. Me especializo en unir diseño y tecnología 'IA' para crear interfaces intuitivas y funcionales.",
         goal: "Un entusiasta de la IA dedicado a construir el futuro de la interacción digital."
       },
       projects: {
@@ -164,7 +164,7 @@ const resources = {
         social_ui: {
           title: "Interfaz Social",
           subtitle: "Diseño de Experiencia",
-          description: "Una interfaz moderna para la interacción social, centrada en una tipografía limpia y flujos de usuario intuitivos.",
+          description: "Una interface moderna para la interacción social, centrada en una tipografía limpia y flujos de usuario intuitivos.",
           features: {
             editor: "Creación de Conteúdo",
             upload: "Gestión de Medios",
