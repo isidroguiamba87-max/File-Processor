@@ -19,7 +19,7 @@ const resources = {
       },
       about: {
         title: "About",
-        description: "Currently studying Computer Engineering and Technology at the United Methodist University of Mozambique (UMUM) and a member of the Ku_kulaDevs startup. My work focuses on the intersection of design and technology, specializing in creating interfaces that are both visually compelling and highly functional.",
+        description: "Computer Engineering student at UMUM and member of Ku_kulaDevs. I specialize in merging design and technology to create intuitive and functional interfaces.",
         goal: "An AI enthusiast dedicated to building the future of digital interaction."
       },
       projects: {
@@ -82,7 +82,7 @@ const resources = {
       },
       about: {
         title: "Sobre",
-        description: "Em formação em Engenharia Informática e Tecnologias na Universidade Metodista Unida de Moçambique (UMUM) e membro da startup Ku_kulaDevs. Meu trabalho foca-se na intersecção entre design e tecnologia, especializando-me na criação de interfaces que são visualmente atraentes e altamente funcionais.",
+        description: "Estudante de Engenharia Informática na UMUM e membro da Ku_kulaDevs. Especializo-me em unir design e tecnologia para criar interfaces intuitivas e funcionais.",
         goal: "Um entusiasta em IA dedicado a construir o futuro da interação digital."
       },
       projects: {
@@ -145,7 +145,7 @@ const resources = {
       },
       about: {
         title: "Sobre",
-        description: "En formación en Ingeniería Informática y Tecnologías en la Universidad Metodista Unida de Mozambique (UMUM) y miembro de la startup Ku_kulaDevs. Mi trabajo se centra en la intersección entre el diseño y la tecnología, especializándome en la creación de interfaces que son visualmente atractivas y altamente funcionales.",
+        description: "Estudiante de Ingeniería Informática en UMUM y miembro de Ku_kulaDevs. Me especializo en unir diseño y tecnología para crear interfaces intuitivas y funcionales.",
         goal: "Un entusiasta de la IA dedicado a construir el futuro de la interacción digital."
       },
       projects: {
@@ -166,7 +166,7 @@ const resources = {
           subtitle: "Diseño de Experiencia",
           description: "Una interfaz moderna para la interacción social, centrada en una tipografía limpia y flujos de usuario intuitivos.",
           features: {
-            editor: "Creación de Contenido",
+            editor: "Creación de Conteúdo",
             upload: "Gestión de Medios",
             preview: "Vista Previa",
             ux: "Flujo Intuitivo"

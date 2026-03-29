@@ -21,10 +21,10 @@ export function About() {
             
             <div className="grid md:grid-cols-5 gap-12 items-start">
               <div className="md:col-span-3 space-y-6">
-                <p className="text-2xl md:text-3xl font-heading font-medium text-foreground leading-tight">
+                <p className="text-xl md:text-2xl font-heading font-medium text-foreground leading-relaxed text-justify">
                   {t('about.description')}
                 </p>
-                <p className="text-muted-foreground text-lg leading-relaxed">
+                <p className="text-muted-foreground text-lg leading-relaxed text-justify">
                   {t('about.goal')}
                 </p>
               </div>
