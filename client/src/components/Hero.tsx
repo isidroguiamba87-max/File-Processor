@@ -52,7 +52,7 @@ export function Hero() {
               <a href="https://www.linkedin.com/in/isidro-guiamba-0b3211346/" target="_blank" rel="noreferrer" className="p-2 rounded-full bg-muted hover:bg-primary/20 text-foreground hover:text-primary transition-all">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="mailto:isidroguiamba@gmail.com" className="p-2 rounded-full bg-muted hover:bg-primary/20 text-foreground hover:text-primary transition-all">
+              <a href="mailto:isidroguiamba87@gmail.com" className="p-2 rounded-full bg-muted hover:bg-primary/20 text-foreground hover:text-primary transition-all">
                 <Mail className="h-5 w-5" />
               </a>
             </div>

@@ -74,8 +74,8 @@ export function Contact() {
     {
       icon: <Mail className="h-5 w-5" />,
       label: "Email",
-      value: "isidroguiamba@gmail.com",
-      href: "mailto:isidroguiamba@gmail.com",
+      value: "isidroguiamba87@gmail.com",
+      href: "mailto:isidroguiamba87@gmail.com",
       color: "text-red-400"
     },
     {
