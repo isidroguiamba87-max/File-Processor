@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { Phone, Mail, Linkedin, Send, MessageSquare, MapPin } from "lucide-react";
+import { Phone, Mail, Linkedin, Send, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -16,7 +16,9 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { toast } from "@/hooks/use-toast";
+import { useToast } from "@/hooks/use-toast";
+import { apiRequest } from "@/lib/queryClient";
+import { useState } from "react";
 
 const contactFormSchema = z.object({
   name: z.string().min(2, "O nome deve ter pelo menos 2 caracteres"),
@@ -28,6 +30,9 @@ const contactFormSchema = z.object({
 type ContactFormValues = z.infer<typeof contactFormSchema>;
 
 export function Contact() {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
@@ -38,13 +43,24 @@ export function Contact() {
     },
   });
 
-  function onSubmit(data: ContactFormValues) {
-    console.log(data);
-    toast({
-      title: "Mensagem enviada!",
-      description: "Obrigado pelo contacto. Responderei o mais breve possível.",
-    });
-    form.reset();
+  async function onSubmit(data: ContactFormValues) {
+    setIsSubmitting(true);
+    try {
+      await apiRequest("POST", "/api/contact", data);
+      toast({
+        title: "Mensagem enviada!",
+        description: "Obrigado pelo contacto. Responderei o mais breve possível.",
+      });
+      form.reset();
+    } catch (error) {
+      toast({
+        variant: "destructive",
+        title: "Erro ao enviar",
+        description: "Ocorreu um problema ao enviar sua mensagem. Tente novamente.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   const contactInfo = [
@@ -82,7 +98,6 @@ export function Contact() {
     <section id="contact" className="py-24 bg-secondary/30 relative">
       <div className="container px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Left Side: Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -115,7 +130,6 @@ export function Contact() {
             </div>
           </motion.div>
 
-          {/* Right Side: Form */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -186,8 +200,12 @@ export function Contact() {
                   )}
                 />
 
-                <Button type="submit" className="w-full h-12 text-lg font-semibold bg-accent hover:bg-accent/90 text-white rounded-xl transition-all">
-                  <Send className="mr-2 h-5 w-5" /> Enviar Mensagem
+                <Button 
+                  type="submit" 
+                  disabled={isSubmitting}
+                  className="w-full h-12 text-lg font-semibold bg-accent hover:bg-accent/90 text-white rounded-xl transition-all"
+                >
+                  {isSubmitting ? "Enviando..." : <><Send className="mr-2 h-5 w-5" /> Enviar Mensagem</>}
                 </Button>
               </form>
             </Form>
