@@ -34,6 +34,17 @@ const resources = {
             community: "Agricultural Community",
             marketplace: "Marketplace"
           }
+        },
+        social_ui: {
+          title: "Social Media UI",
+          subtitle: "Post Creation Interface",
+          description: "A modern and intuitive interface for creating social media posts, focusing on the end-user experience.",
+          features: {
+            editor: "Rich Text Editor",
+            upload: "Media Upload",
+            preview: "Real-time Preview",
+            ux: "Intuitive UX"
+          }
         }
       },
       skills: {
@@ -86,6 +97,17 @@ const resources = {
             community: "Comunidade Agrícola",
             marketplace: "Marketplace"
           }
+        },
+        social_ui: {
+          title: "Interface de Rede Social",
+          subtitle: "Campo de Criação de Publicação",
+          description: "Uma interface moderna e intuitiva para a criação de publicações em redes sociais, focada na experiência do utilizador final.",
+          features: {
+            editor: "Editor de Texto",
+            upload: "Upload de Média",
+            preview: "Pré-visualização",
+            ux: "UX Intuitiva"
+          }
         }
       },
       skills: {
@@ -118,7 +140,7 @@ const resources = {
       hero: {
         title: "Isidro Helder Guiamba",
         subtitle: "Conocido como 'Kinho' | Programador y Diseñador",
-        tagline: "Transformando Ideas en Productos Digitales Funcionales",
+        tagline: "Transformando Ideas en Productos Digitais Funcionales",
         cta: "Ver Mi Trabajo"
       },
       about: {
@@ -138,10 +160,21 @@ const resources = {
             community: "Comunidad Agrícola",
             marketplace: "Marketplace"
           }
+        },
+        social_ui: {
+          title: "Interfaz de Red Social",
+          subtitle: "Campo de Creación de Publicación",
+          description: "Una interfaz moderna e intuitiva para la creación de publicaciones en redes sociales, enfocada en la experiencia del usuario final.",
+          features: {
+            editor: "Editor de Texto",
+            upload: "Carga de Medios",
+            preview: "Vista Previa",
+            ux: "UX Intuitiva"
+          }
         }
       },
       skills: {
-        title: "Habilidades y Tecnologías"
+        title: "Habilidades y Tecnologias"
       },
       certificates: {
         title: "Certificados y Diplomas",
@@ -164,7 +197,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: "pt", // Default language based on user request language (Portuguese)
+    lng: "pt",
     interpolation: {
       escapeValue: false
     }
