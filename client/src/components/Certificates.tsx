@@ -1,59 +1,96 @@
-import { motion } from "framer-motion";
-import { ZoomIn } from "lucide-react";
+"use client";
 
-// Import images
-import cert1 from "@assets/Imagem_do_WhatsApp_de_2025-12-15_à(s)_19.56.32_04bb100e_1765821513103.jpg";
-import cert2 from "@assets/Imagem_do_WhatsApp_de_2025-12-15_à(s)_19.57.18_13112695_1765821513103.jpg";
-import cert3 from "@assets/Imagem_do_WhatsApp_de_2025-12-15_à(s)_19.57.19_5aece132_1765821513104.jpg";
-import cert4 from "@assets/Imagem_do_WhatsApp_de_2025-12-15_à(s)_19.57.19_20a584ec_1765821513104.jpg";
-import cert5 from "@assets/Imagem_do_WhatsApp_de_2025-12-15_à(s)_19.57.20_07831f64_1765821513105.jpg";
+import { motion } from "framer-motion";
+import { Award, Calendar, ExternalLink, GraduationCap } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export function Certificates() {
+  const { t } = useTranslation();
+
   const certificates = [
-    { id: 1, src: cert2, title: "Diploma Universitário", desc: "Universidade Metodista" },
-    { id: 2, src: cert3, title: "Bootcamp Python", desc: "MozDevz" },
-    { id: 3, src: cert5, title: "Workshop Web Development", desc: "MozDevz" },
-    { id: 4, src: cert4, title: "Jornadas Científicas", desc: "IAgroMoz Presentation" },
-    { id: 5, src: cert1, title: "12ª Classe", desc: "Habilitações Literárias" },
+    { 
+      id: 1, 
+      title: "Engenharia Informática e Tecnologias", 
+      institution: "Universidade Metodista Unida de Moçambique",
+      date: "Em curso",
+      icon: <GraduationCap className="h-5 w-5" />
+    },
+    { 
+      id: 2, 
+      title: "Workshop de Programação e Inovação", 
+      institution: "MozDevz",
+      date: "2023",
+      icon: <Award className="h-5 w-5" />
+    },
+    { 
+      id: 3, 
+      title: "Workshop de Desenvolvimento Web", 
+      institution: "MozDevz",
+      date: "2023",
+      icon: <Award className="h-5 w-5" />
+    },
+    { 
+      id: 4, 
+      title: "Apresentação nas Jornadas Científicas", 
+      institution: "IAgroMoz Project",
+      date: "2024",
+      icon: <Award className="h-5 w-5" />
+    },
+    { 
+      id: 5, 
+      title: "Diploma de Honra", 
+      institution: "Habilitações Literárias",
+      date: "2021",
+      icon: <Award className="h-5 w-5" />
+    },
   ];
 
   return (
-    <section id="certificates" className="py-20">
-      <div className="container px-6">
+    <section id="certificates" className="py-24 relative overflow-hidden">
+      <div className="container px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-16 text-center"
         >
-          <h2 className="text-3xl md:text-4xl font-heading font-bold">
-            Certificados
+          <h2 className="text-3xl md:text-5xl font-heading font-bold mb-4">
+            Formação & <span className="text-accent">Certificações</span>
           </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Minha jornada académica e profissional é marcada pela busca constante de conhecimento e excelência técnica.
+          </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid gap-4 max-w-4xl mx-auto">
           {certificates.map((cert, index) => (
             <motion.div
               key={cert.id}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              className="group relative bg-card/40 backdrop-blur-sm border border-border/50 p-6 rounded-2xl hover:border-accent/50 hover:bg-card/60 transition-all"
             >
-              <div className="cursor-pointer overflow-hidden border border-border/50 bg-card/50 hover:bg-card hover:border-primary/50 transition-all group rounded-lg">
-                <div className="p-0 relative aspect-[4/3]">
-                  <img 
-                    src={cert.src} 
-                    alt={cert.title} 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <ZoomIn className="text-white w-10 h-10" />
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div className="flex items-start gap-4">
+                  <div className="mt-1 w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center text-accent group-hover:scale-110 transition-transform">
+                    {cert.icon}
                   </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                    <h4 className="text-white font-semibold truncate">{cert.title}</h4>
-                    <p className="text-white/70 text-sm">{cert.desc}</p>
+                  <div>
+                    <h3 className="text-lg font-bold text-foreground group-hover:text-accent transition-colors">
+                      {cert.title}
+                    </h3>
+                    <p className="text-muted-foreground text-sm">
+                      {cert.institution}
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 text-sm text-muted-foreground md:text-right">
+                  <div className="flex items-center gap-1.5">
+                    <Calendar className="h-4 w-4" />
+                    {cert.date}
                   </div>
                 </div>
               </div>
