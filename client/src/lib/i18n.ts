@@ -19,7 +19,7 @@ const resources = {
       },
       about: {
         title: "About",
-        description: "Computer Engineering student at UMUM and member of Ku_kulaDevs. I specialize in merging design and technology to create intuitive and functional interfaces.",
+        description: "In Computer Engineering training at UMUM and member of Ku_kulaDevs. I specialize in merging design and technology to create intuitive and functional interfaces.",
         goal: "An AI enthusiast dedicated to building the future of digital interaction."
       },
       projects: {
@@ -82,7 +82,7 @@ const resources = {
       },
       about: {
         title: "Sobre",
-        description: "Estudante de Engenharia Informática na UMUM e membro da Ku_kulaDevs. Especializo-me em unir design e tecnologia para criar interfaces intuitivas e funcionais.",
+        description: "Em Formacao Engenharia Informática na UMUM e membro da Ku_kulaDevs. Especializo-me em unir design e tecnologia para criar interfaces intuitivas e funcionais.",
         goal: "Um entusiasta em IA dedicado a construir o futuro da interação digital."
       },
       projects: {
@@ -145,7 +145,7 @@ const resources = {
       },
       about: {
         title: "Sobre",
-        description: "Estudiante de Ingeniería Informática en UMUM y miembro de Ku_kulaDevs. Me especializo en unir diseño y tecnología para crear interfaces intuitivas y funcionales.",
+        description: "En formación de Ingeniería Informática en UMUM e membro de Ku_kulaDevs. Me especializo en unir diseño y tecnología para crear interfaces intuitivas y funcionales.",
         goal: "Un entusiasta de la IA dedicado a construir el futuro de la interacción digital."
       },
       projects: {
