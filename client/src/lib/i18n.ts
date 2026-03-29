@@ -13,21 +13,21 @@ const resources = {
       },
       hero: {
         title: "Isidro Helder Guiamba",
-        subtitle: "Known as 'Kinho' | Programmer & Designer",
-        tagline: "Transforming Ideas into Functional Digital Products",
+        subtitle: "Known as 'Kinho' | UI/UX Designer & Programmer",
+        tagline: "Transforming Ideas into Beautiful & Functional Digital Products",
         cta: "View My Work"
       },
       about: {
         title: "About Me",
-        description: "I am a 22-year-old student at the United Methodist University of Mozambique (UMUM), studying Computer Engineering and Technology, and a member of the Ku_kulaDevs startup. I specialize in modern digital solutions, web development using Django, Python, HTML, CSS, Java, and JavaScript, as well as UI/UX Design and full-stack systems. I also have basic knowledge of C++ and Object-Oriented Programming with Java.",
-        goal: "My goal is to create impactful digital experiences that solve real-world problems."
+        description: "I am a 22-year-old student at the United Methodist University of Mozambique (UMUM), studying Computer Engineering and Technology, and a member of the Ku_kulaDevs startup. I specialize in modern digital solutions, UI/UX Design, and web development using Django, Python, HTML, CSS, Java, and JavaScript. I focus on creating intuitive interfaces that provide the best user experience.",
+        goal: "My goal is to create impactful digital experiences that solve real-world problems through design and code."
       },
       projects: {
         title: "Projects",
         iagromoz: {
           title: "IAgroMoz",
           subtitle: "Smart Agricultural Web System",
-          description: "A support platform for farmers designed to assist the agricultural community.",
+          description: "A support platform for farmers designed to assist the agricultural community with a focus on usability.",
           features: {
             weather: "Climate Recommendations",
             assistance: "User Assistance",
@@ -76,21 +76,21 @@ const resources = {
       },
       hero: {
         title: "Isidro Helder Guiamba",
-        subtitle: "Conhecido por 'Kinho' | Programador e Designer",
-        tagline: "Transformando Ideias em Produtos Digitais Funcionais",
+        subtitle: "Conhecido por 'Kinho' | Designer UI/UX e Programador",
+        tagline: "Transformando Ideias em Produtos Digitais Lindos e Funcionais",
         cta: "Ver Meu Trabalho"
       },
       about: {
         title: "Sobre Mim",
-        description: "Sou estudante da Universidade Metodista Unida de Moçambique (UMUM), no curso de Engenharia Informática e Tecnologias, tenho 22 anos e faço parte da startup Ku_kulaDevs. Sou especializado em soluções digitais modernas, desenvolvimento web usando Django, Python, HTML, CSS, Java e JavaScript, Design UI/UX e sistemas full-stack. Possuo conhecimentos básicos em C++ e Programação Orientada a Objetos com Java.",
-        goal: "Meu objetivo é criar experiências digitais impactantes que resolvem problemas reais."
+        description: "Sou estudante da Universidade Metodista Unida de Moçambique (UMUM), no curso de Engenharia Informática e Tecnologias, tenho 22 anos e faço parte da startup Ku_kulaDevs. Sou especializado em soluções digitais modernas, Design UI/UX e desenvolvimento web usando Django, Python, HTML, CSS, Java e JavaScript. Meu foco é criar interfaces intuitivas que proporcionam a melhor experiência ao utilizador.",
+        goal: "Meu objetivo é criar experiências digitais impactantes que resolvem problemas reais através do design e código."
       },
       projects: {
         title: "Projetos",
         iagromoz: {
           title: "IAgroMoz",
           subtitle: "Sistema Web Agrícola Inteligente",
-          description: "A plataforma IAgroMoz é uma plataforma de apoio ao agricultor desenhada para assistir a comunidade agrícola.",
+          description: "A plataforma IAgroMoz é uma plataforma de apoio ao agricultor desenhada para assistir a comunidade agrícola com foco em usabilidade.",
           features: {
             weather: "Recomendações Climáticas",
             assistance: "Assistência ao Utilizador",
@@ -139,21 +139,21 @@ const resources = {
       },
       hero: {
         title: "Isidro Helder Guiamba",
-        subtitle: "Conocido como 'Kinho' | Programador y Diseñador",
-        tagline: "Transformando Ideas en Productos Digitais Funcionales",
+        subtitle: "Conocido como 'Kinho' | Diseñador UI/UX y Programador",
+        tagline: "Transformando Ideas en Productos Digitais Hermosos y Funcionales",
         cta: "Ver Mi Trabajo"
       },
       about: {
         title: "Sobre Mí",
-        description: "Soy estudiante de la Universidad Metodista Unida de Mozambique (UMUM), en Ingeniería Informática y Tecnologías, tengo 22 años y formo parte de la startup Ku_kulaDevs. Me especializo en soluciones digitales modernas, desarrollo web usando Django, Python, HTML, CSS, Java y JavaScript, Diseño UI/UX y sistemas full-stack. Tengo conocimientos básicos en C++ y Programación Orientada a Objetos con Java.",
-        goal: "Mi objetivo es crear experiencias digitales impactantes que resuelvan problemas reales."
+        description: "Soy estudiante de la Universidad Metodista Unida de Mozambique (UMUM), en Ingeniería Informática y Tecnologías, tengo 22 años y formo parte de la startup Ku_kulaDevs. Me especializo en soluciones digitales modernas, Diseño UI/UX e desarrollo web usando Django, Python, HTML, CSS, Java y JavaScript. Mi enfoque es crear interfaces intuitivas que brinden la mejor experiencia al usuario.",
+        goal: "Mi objetivo es crear experiencias digitales impactantes que resuelvan problemas reales a través del diseño y el código."
       },
       projects: {
         title: "Proyectos",
         iagromoz: {
           title: "IAgroMoz",
           subtitle: "Sistema Web Agrícola Inteligente",
-          description: "Una plataforma de apoyo al agricultor diseñada para asistir a la comunidad agrícola.",
+          description: "Una plataforma de apoyo al agricultor diseñada para asistir a la comunidad agrícola con un enfoque en la usabilidad.",
           features: {
             weather: "Recomendaciones Climáticas",
             assistance: "Asistencia al Usuario",
@@ -178,7 +178,7 @@ const resources = {
       },
       certificates: {
         title: "Certificados y Diplomas",
-        workshop_web: "Taller de Desarrollo Web - MozDevz",
+        workshop_web: "Taller de Desenvolvimento Web - MozDevz",
         workshop_python: "Taller de Programación e Innovación - MozDevz",
         diploma: "Diploma de Honor"
       },
