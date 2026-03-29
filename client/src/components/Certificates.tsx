@@ -40,7 +40,7 @@ export function Certificates() {
       id: 5, 
       title: "Diploma de Honra", 
       institution: "Habilitações Literárias",
-      date: "2021",
+      date: "2024",
       icon: <Award className="h-5 w-5" />
     },
   ];
