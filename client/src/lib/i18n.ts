@@ -5,7 +5,7 @@ const resources = {
   en: {
     translation: {
       nav: {
-        about: "About Me",
+        about: "About",
         projects: "Projects",
         skills: "Skills",
         certificates: "Certificates",
@@ -13,51 +13,51 @@ const resources = {
       },
       hero: {
         title: "Isidro Helder Guiamba",
-        subtitle: "Known as 'Kinho' | UI/UX Designer & Programmer",
-        tagline: "Transforming Ideas into Beautiful & Functional Digital Products",
-        cta: "View My Work"
+        subtitle: "UI/UX Designer & Programmer",
+        tagline: "Crafting intuitive digital experiences through design and code.",
+        cta: "View Projects"
       },
       about: {
-        title: "About Me",
-        description: "I am a 22-year-old student at the United Methodist University of Mozambique (UMUM), studying Computer Engineering and Technology, and a member of the Ku_kulaDevs startup. I specialize in modern digital solutions, UI/UX Design, and web development using Django, Python, HTML, CSS, Java, and JavaScript. I focus on creating intuitive interfaces that provide the best user experience.",
-        goal: "My goal is to create impactful digital experiences that solve real-world problems through design and code."
+        title: "About",
+        description: "I am a Computer Engineering and Technology student at the United Methodist University of Mozambique (UMUM) and a member of the Ku_kulaDevs startup. My work focuses on the intersection of design and technology, specializing in creating interfaces that are both visually compelling and highly functional.",
+        goal: "I believe that great design is invisible—it should feel natural and effortless for the user."
       },
       projects: {
-        title: "Projects",
+        title: "Selected Projects",
         iagromoz: {
           title: "IAgroMoz",
-          subtitle: "Smart Agricultural Web System",
-          description: "A support platform for farmers designed to assist the agricultural community with a focus on usability.",
+          subtitle: "Agricultural Support System",
+          description: "A comprehensive platform designed to support the agricultural community with a focus on usability and user-centered design.",
           features: {
-            weather: "Climate Recommendations",
-            assistance: "User Assistance",
-            community: "Agricultural Community",
+            weather: "Climate Insights",
+            assistance: "User Support",
+            community: "Community Hub",
             marketplace: "Marketplace"
           }
         },
         social_ui: {
-          title: "Social Media UI",
-          subtitle: "Post Creation Interface",
-          description: "A modern and intuitive interface for creating social media posts, focusing on the end-user experience.",
+          title: "Social Interface",
+          subtitle: "User Experience Design",
+          description: "A modern interface for social interaction, focusing on clean typography and intuitive user flows.",
           features: {
-            editor: "Rich Text Editor",
-            upload: "Media Upload",
-            preview: "Real-time Preview",
-            ux: "Intuitive UX"
+            editor: "Content Creation",
+            upload: "Media Management",
+            preview: "Live Preview",
+            ux: "Intuitive Flow"
           }
         }
       },
       skills: {
-        title: "Skills & Technologies"
+        title: "Expertise"
       },
       certificates: {
-        title: "Certificates & Honors",
-        workshop_web: "Web Development Workshop - MozDevz",
-        workshop_python: "Programming & Innovation Workshop - MozDevz",
+        title: "Education & Recognition",
+        workshop_web: "Web Development - MozDevz",
+        workshop_python: "Programming & Innovation - MozDevz",
         diploma: "Diploma of Honor"
       },
       contact: {
-        title: "Get In Touch",
+        title: "Get in Touch",
         phone: "Phone",
         email: "Email",
         whatsapp: "WhatsApp",
@@ -68,7 +68,7 @@ const resources = {
   pt: {
     translation: {
       nav: {
-        about: "Sobre Mim",
+        about: "Sobre",
         projects: "Projetos",
         skills: "Habilidades",
         certificates: "Certificados",
@@ -76,47 +76,47 @@ const resources = {
       },
       hero: {
         title: "Isidro Helder Guiamba",
-        subtitle: "Conhecido por 'Kinho' | Designer UI/UX e Programador",
-        tagline: "Transformando Ideias em Produtos Digitais Lindos e Funcionais",
-        cta: "Ver Meu Trabalho"
+        subtitle: "Designer UI/UX & Programador",
+        tagline: "Criando experiências digitais intuitivas através de design e código.",
+        cta: "Ver Projetos"
       },
       about: {
-        title: "Sobre Mim",
-        description: "Sou estudante da Universidade Metodista Unida de Moçambique (UMUM), no curso de Engenharia Informática e Tecnologias, tenho 22 anos e faço parte da startup Ku_kulaDevs. Sou especializado em soluções digitais modernas, Design UI/UX e desenvolvimento web usando Django, Python, HTML, CSS, Java e JavaScript. Meu foco é criar interfaces intuitivas que proporcionam a melhor experiência ao utilizador.",
-        goal: "Meu objetivo é criar experiências digitais impactantes que resolvem problemas reais através do design e código."
+        title: "Sobre",
+        description: "Sou estudante de Engenharia Informática e Tecnologias na Universidade Metodista Unida de Moçambique (UMUM) e membro da startup Ku_kulaDevs. Meu trabalho foca-se na intersecção entre design e tecnologia, especializando-me na criação de interfaces que são visualmente atraentes e altamente funcionais.",
+        goal: "Acredito que o bom design é invisível — deve parecer natural e sem esforço para o utilizador."
       },
       projects: {
-        title: "Projetos",
+        title: "Projetos Selecionados",
         iagromoz: {
           title: "IAgroMoz",
-          subtitle: "Sistema Web Agrícola Inteligente",
-          description: "A plataforma IAgroMoz é uma plataforma de apoio ao agricultor desenhada para assistir a comunidade agrícola com foco em usabilidade.",
+          subtitle: "Sistema de Apoio Agrícola",
+          description: "Uma plataforma abrangente desenhada para apoiar a comunidade agrícola com foco em usabilidade e design centrado no utilizador.",
           features: {
-            weather: "Recomendações Climáticas",
-            assistance: "Assistência ao Utilizador",
-            community: "Comunidade Agrícola",
+            weather: "Dados Climáticos",
+            assistance: "Suporte ao Utilizador",
+            community: "Hub Comunitário",
             marketplace: "Marketplace"
           }
         },
         social_ui: {
-          title: "Interface de Rede Social",
-          subtitle: "Campo de Criação de Publicação",
-          description: "Uma interface moderna e intuitiva para a criação de publicações em redes sociais, focada na experiência do utilizador final.",
+          title: "Interface Social",
+          subtitle: "Design de Experiência",
+          description: "Uma interface moderna para interação social, focada em tipografia limpa e fluxos de utilizador intuitivos.",
           features: {
-            editor: "Editor de Texto",
-            upload: "Upload de Média",
+            editor: "Criação de Conteúdo",
+            upload: "Gestão de Média",
             preview: "Pré-visualização",
-            ux: "UX Intuitiva"
+            ux: "Fluxo Intuitivo"
           }
         }
       },
       skills: {
-        title: "Habilidades e Tecnologias"
+        title: "Especialidades"
       },
       certificates: {
-        title: "Certificados e Diplomas",
-        workshop_web: "Workshop de Desenvolvimento Web - MozDevz",
-        workshop_python: "Workshop de Programação e Inovação - MozDevz",
+        title: "Formação & Reconhecimento",
+        workshop_web: "Desenvolvimento Web - MozDevz",
+        workshop_python: "Programação & Inovação - MozDevz",
         diploma: "Diploma de Honra"
       },
       contact: {
@@ -131,7 +131,7 @@ const resources = {
   es: {
     translation: {
       nav: {
-        about: "Sobre Mí",
+        about: "Sobre",
         projects: "Proyectos",
         skills: "Habilidades",
         certificates: "Certificados",
@@ -139,47 +139,47 @@ const resources = {
       },
       hero: {
         title: "Isidro Helder Guiamba",
-        subtitle: "Conocido como 'Kinho' | Diseñador UI/UX y Programador",
-        tagline: "Transformando Ideas en Productos Digitais Hermosos y Funcionales",
-        cta: "Ver Mi Trabajo"
+        subtitle: "Diseñador UI/UX & Programador",
+        tagline: "Creando experiencias digitales intuitivas a través del diseño y el código.",
+        cta: "Ver Proyectos"
       },
       about: {
-        title: "Sobre Mí",
-        description: "Soy estudiante de la Universidad Metodista Unida de Mozambique (UMUM), en Ingeniería Informática y Tecnologías, tengo 22 años y formo parte de la startup Ku_kulaDevs. Me especializo en soluciones digitales modernas, Diseño UI/UX e desarrollo web usando Django, Python, HTML, CSS, Java y JavaScript. Mi enfoque es crear interfaces intuitivas que brinden la mejor experiencia al usuario.",
-        goal: "Mi objetivo es crear experiencias digitales impactantes que resuelvan problemas reales a través del diseño y el código."
+        title: "Sobre",
+        description: "Soy estudiante de Ingeniería Informática y Tecnologías en la Universidad Metodista Unida de Mozambique (UMUM) y miembro de la startup Ku_kulaDevs. Mi trabajo se centra en la intersección entre el diseño y la tecnología, especializándome en la creación de interfaces que son visualmente atractivas y altamente funcionales.",
+        goal: "Creo que el buen diseño es invisible: debe sentirse natural y sin esfuerzo para el usuario."
       },
       projects: {
-        title: "Proyectos",
+        title: "Proyectos Seleccionados",
         iagromoz: {
           title: "IAgroMoz",
-          subtitle: "Sistema Web Agrícola Inteligente",
-          description: "Una plataforma de apoyo al agricultor diseñada para asistir a la comunidad agrícola con un enfoque en la usabilidad.",
+          subtitle: "Sistema de Apoyo Agrícola",
+          description: "Una plataforma integral diseñada para apoyar a la comunidad agrícola con un enfoque en la usabilidad y el diseño centrado en el usuario.",
           features: {
-            weather: "Recomendaciones Climáticas",
-            assistance: "Asistencia al Usuario",
-            community: "Comunidad Agrícola",
+            weather: "Datos Climáticos",
+            assistance: "Soporte al Usuario",
+            community: "Centro Comunitario",
             marketplace: "Marketplace"
           }
         },
         social_ui: {
-          title: "Interfaz de Red Social",
-          subtitle: "Campo de Creación de Publicación",
-          description: "Una interfaz moderna e intuitiva para la creación de publicaciones en redes sociales, enfocada en la experiencia del usuario final.",
+          title: "Interfaz Social",
+          subtitle: "Diseño de Experiencia",
+          description: "Una interfaz moderna para la interacción social, centrada en una tipografía limpia y flujos de usuario intuitivos.",
           features: {
-            editor: "Editor de Texto",
-            upload: "Carga de Medios",
+            editor: "Creación de Contenido",
+            upload: "Gestión de Medios",
             preview: "Vista Previa",
-            ux: "UX Intuitiva"
+            ux: "Flujo Intuitivo"
           }
         }
       },
       skills: {
-        title: "Habilidades y Tecnologias"
+        title: "Especialidades"
       },
       certificates: {
-        title: "Certificados y Diplomas",
-        workshop_web: "Taller de Desenvolvimento Web - MozDevz",
-        workshop_python: "Taller de Programación e Innovación - MozDevz",
+        title: "Formación & Reconocimiento",
+        workshop_web: "Desarrollo Web - MozDevz",
+        workshop_python: "Programación & Innovación - MozDevz",
         diploma: "Diploma de Honor"
       },
       contact: {

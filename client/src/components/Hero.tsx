@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Linkedin, Mail } from "lucide-react";
 import isidroPhoto from "@/assets/isidro-profile.jpg";
-import heroBg from "@assets/generated_images/abstract_blue_technology_background_with_digital_waves_and_code_elements_for_hero_section.png";
 
 export function Hero() {
 
@@ -10,110 +9,60 @@ export function Hero() {
       id="hero" 
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-white"
     >
-      {/* Background with overlay */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={heroBg} 
-          alt="Background" 
-          className="w-full h-full object-cover opacity-5"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-white/80 to-white" />
-      </div>
-
-      <div className="container px-6 z-10 grid md:grid-cols-2 gap-12 items-center">
+      <div className="container px-6 z-10 grid md:grid-cols-2 gap-16 items-center">
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="space-y-6"
+          className="space-y-8"
         >
-          <div className="inline-block px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-semibold">
-            Designer UI/UX & Programador
+          <div className="space-y-4">
+            <h1 className="text-6xl md:text-8xl font-heading font-bold leading-[0.9] text-foreground tracking-tighter">
+              Isidro<br />Guiamba<span className="text-primary">.</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-muted-foreground font-medium">
+              Designer UI/UX & Programador
+            </p>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-heading font-bold leading-tight text-foreground">
-            Isidro Helder Guiamba<span className="text-primary">.</span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-lg leading-relaxed">
-            Transformando Ideias em Produtos Digitais <span className="text-foreground font-medium">Lindos e Funcionais</span>
+          <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
+            Criando experiências digitais intuitivas através de design e código.
           </p>
 
-          <div className="flex flex-wrap gap-4 pt-4">
+          <div className="flex items-center gap-6 pt-4">
             <button 
               onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-primary hover:bg-primary/90 text-white font-semibold rounded-full px-8 py-3.5 flex items-center transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40"
+              className="bg-foreground hover:bg-primary text-white font-bold rounded-full px-8 py-4 flex items-center transition-all"
             >
-              Ver Meu Trabalho <ArrowRight className="ml-2 h-4 w-4" />
+              Ver Projetos <ArrowRight className="ml-2 h-4 w-4" />
             </button>
             
-            <div className="flex items-center gap-4 ml-2">
-              <a href="https://www.linkedin.com/in/isidro-guiamba-0b3211346/" target="_blank" rel="noreferrer" className="p-2.5 rounded-full bg-secondary hover:bg-primary/10 text-muted-foreground hover:text-primary transition-all border border-border">
-                <Linkedin className="h-5 w-5" />
+            <div className="flex items-center gap-4">
+              <a href="https://www.linkedin.com/in/isidro-guiamba-0b3211346/" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Linkedin className="h-6 w-6" />
               </a>
-              <a href="mailto:isidroguiamba87@gmail.com" className="p-2.5 rounded-full bg-secondary hover:bg-primary/10 text-muted-foreground hover:text-primary transition-all border border-border">
-                <Mail className="h-5 w-5" />
+              <a href="mailto:isidroguiamba87@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                <Mail className="h-6 w-6" />
               </a>
             </div>
           </div>
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 1, delay: 0.2 }}
           className="relative flex justify-center md:justify-end"
         >
-          <div className="relative w-72 h-72 md:w-96 md:h-96">
-            {/* Subtle glow */}
-            <div className="absolute inset-0 rounded-full bg-primary/5 blur-3xl" />
-            
-            {/* Image container */}
-            <div className="relative w-full h-full rounded-full border-8 border-white overflow-hidden shadow-2xl">
-              <img 
-                src={isidroPhoto} 
-                alt="Isidro Helder Guiamba" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Floating decorative elements */}
-            <motion.div 
-              animate={{ y: [0, -15, 0] }}
-              transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
-              className="absolute -top-4 -right-4 bg-white p-4 rounded-2xl border border-border shadow-xl backdrop-blur-md"
-            >
-              <div className="text-sm font-bold text-primary">UI/UX</div>
-              <div className="text-[11px] text-muted-foreground font-medium">Designer</div>
-            </motion.div>
-
-            <motion.div 
-              animate={{ y: [0, 15, 0] }}
-              transition={{ repeat: Infinity, duration: 4, delay: 1, ease: "easeInOut" }}
-              className="absolute -bottom-4 -left-4 bg-white p-4 rounded-2xl border border-border shadow-xl backdrop-blur-md"
-            >
-              <div className="text-sm font-bold text-primary">Clean</div>
-              <div className="text-[11px] text-muted-foreground font-medium">Interfaces</div>
-            </motion.div>
+          <div className="relative w-full max-w-md aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
+            <img 
+              src={isidroPhoto} 
+              alt="Isidro Helder Guiamba" 
+              className="w-full h-full object-cover"
+            />
           </div>
         </motion.div>
       </div>
-      
-      {/* Scroll indicator */}
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-      >
-        <div className="w-6 h-10 border-2 border-muted-foreground/20 rounded-full flex justify-center p-2">
-          <motion.div 
-            animate={{ y: [0, 12, 0] }}
-            transition={{ repeat: Infinity, duration: 1.5 }}
-            className="w-1.5 h-1.5 bg-primary rounded-full"
-          />
-        </div>
-      </motion.div>
     </section>
   );
 }
