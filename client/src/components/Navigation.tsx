@@ -42,7 +42,7 @@ export function Navigation() {
           onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
           className="text-2xl font-heading font-bold text-primary tracking-tighter"
         >
-          KINHO<span className="text-foreground">.dev</span>
+          Isidro<span className="text-foreground">.Devz</span>
         </a>
 
         {/* Desktop Nav */}

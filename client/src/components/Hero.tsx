@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Linkedin, Mail } from "lucide-react";
-import kinhoPhoto from "@assets/Design_sem_nome_1765822512655.jpg";
+import isidroPhoto from "@/assets/isidro-profile.jpg";
 import heroBg from "@assets/generated_images/abstract_blue_technology_background_with_digital_waves_and_code_elements_for_hero_section.png";
 
 export function Hero() {
@@ -72,8 +72,8 @@ export function Hero() {
             {/* Image container */}
             <div className="relative w-full h-full rounded-full border-4 border-primary/30 overflow-hidden shadow-2xl shadow-primary/20">
               <img 
-                src={kinhoPhoto} 
-                alt="Kinho" 
+                src={isidroPhoto} 
+                alt="Isidro Helder Guiamba" 
                 className="w-full h-full object-cover"
               />
             </div>
