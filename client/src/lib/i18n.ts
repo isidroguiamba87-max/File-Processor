@@ -19,8 +19,8 @@ const resources = {
       },
       about: {
         title: "About",
-        description: "I am a Computer Engineering and Technology student at the United Methodist University of Mozambique (UMUM) and a member of the Ku_kulaDevs startup. My work focuses on the intersection of design and technology, specializing in creating interfaces that are both visually compelling and highly functional.",
-        goal: "I believe that great design is invisible—it should feel natural and effortless for the user."
+        description: "Currently studying Computer Engineering and Technology at the United Methodist University of Mozambique (UMUM) and a member of the Ku_kulaDevs startup. My work focuses on the intersection of design and technology, specializing in creating interfaces that are both visually compelling and highly functional.",
+        goal: "An AI enthusiast dedicated to building the future of digital interaction."
       },
       projects: {
         title: "Selected Projects",
@@ -82,8 +82,8 @@ const resources = {
       },
       about: {
         title: "Sobre",
-        description: "Sou estudante de Engenharia Informática e Tecnologias na Universidade Metodista Unida de Moçambique (UMUM) e membro da startup Ku_kulaDevs. Meu trabalho foca-se na intersecção entre design e tecnologia, especializando-me na criação de interfaces que são visualmente atraentes e altamente funcionais.",
-        goal: "Acredito que o bom design é invisível — deve parecer natural e sem esforço para o utilizador."
+        description: "Em formação em Engenharia Informática e Tecnologias na Universidade Metodista Unida de Moçambique (UMUM) e membro da startup Ku_kulaDevs. Meu trabalho foca-se na intersecção entre design e tecnologia, especializando-me na criação de interfaces que são visualmente atraentes e altamente funcionais.",
+        goal: "Um entusiasta em IA dedicado a construir o futuro da interação digital."
       },
       projects: {
         title: "Projetos Selecionados",
@@ -145,8 +145,8 @@ const resources = {
       },
       about: {
         title: "Sobre",
-        description: "Soy estudiante de Ingeniería Informática y Tecnologías en la Universidad Metodista Unida de Mozambique (UMUM) y miembro de la startup Ku_kulaDevs. Mi trabajo se centra en la intersección entre el diseño y la tecnología, especializándome en la creación de interfaces que son visualmente atractivas y altamente funcionales.",
-        goal: "Creo que el buen diseño es invisible: debe sentirse natural y sin esfuerzo para el usuario."
+        description: "En formación en Ingeniería Informática y Tecnologías en la Universidad Metodista Unida de Mozambique (UMUM) y miembro de la startup Ku_kulaDevs. Mi trabajo se centra en la intersección entre el diseño y la tecnología, especializándome en la creación de interfaces que son visualmente atractivas y altamente funcionales.",
+        goal: "Un entusiasta de la IA dedicado a construir el futuro de la interacción digital."
       },
       projects: {
         title: "Proyectos Seleccionados",
