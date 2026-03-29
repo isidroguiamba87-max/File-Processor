@@ -16,7 +16,7 @@ export function Skills() {
     {
       title: "Programação",
       icon: <Terminal className="h-6 w-6 text-primary" />,
-      skills: ["Python", "Java", "C++", "Django", "POO"]
+      skills: ["Python", "Java", "C++"]
     },
     {
       title: "Interação",
